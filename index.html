@@ -1,0 +1,163 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="./js/custom.js"></script>
+    <link rel="icon" href="https://dzu.campusphere.net/wec-counselor-leave-apps/leave/favicon.ico">
+    <title>请假</title>
+    <link href="./css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1921143_afl404vl6g.css">
+    <style>
+        #clip_copy,#web-copy-btn-wk{
+           background:#54aae9 !important
+        }
+    </style>
+</head>
+    <div id="app">
+        <!---->
+        <div class="page-share flex-col flex-1 h-screen overflow-hidden">
+            <div class="flex-col flex-1 ios-touch-scroll">
+                <div class="cat-status-flag no-shrink">
+                    <div class="flag-dom relative flag-success"><span class="personal-info absolute">个人信息 &gt;</span>
+                        <div class="flag-text">
+                            <div class="status-svg-text"><i class="cat-icon iconfont iconsure2" style="font-size: 5.33333vw; color: rgb(255, 255, 255);"></i><span>审批已通过</span></div>
+                            <div class="status-text-bold"> 正在休假中 </div>
+                        </div>
+                        <div class="dynamic-strip no-shrink">
+                            <div class="now-time" id="time">加载中</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-status-show bg-white no-shrink">
+                    <!---->
+                    <div class="bg-white px-20 flex ai-center py-10">
+                        <div class="short-name radius-circle bg-primary font-white font-14 no-shrink mr-10 text-center"><span>子媛</span></div>
+                        <div class="flex-1 font-14">
+                            <div class="font-dark"> 丛子媛 </div>
+                            <div class="font-normal"> 女生202401701068 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-flow-leave-meta hairline-b py-10 font-12 bg-white px-20 no-shrink">
+                    <div class="flex">
+                        <div class="flex mb-5 flex-1">
+                            <div class="font-light no-shrink row-label"> 请假类型： </div>
+                            <div class="font-normal flex-1 mr-5"> 病假 </div>
+                        </div>
+                        <div class="flex mb-5 flex-1">
+                            <div class="font-light no-shrink row-label"> 需要离校： </div>
+                            <div class="flex-1 mr-5"><span class="font-normal">否</span></div>
+                        </div>
+                    </div>
+                    <div class="flex mb-5">
+                        <div class="font-light no-shrink row-label"> 销假规则： </div>
+                        <div class="font-normal flex-1 mr-5"><span class="font-warning">离校请假需要销假，非离校请假无需销假</span><span class="font-primary ml-5">查看 &gt;</span></div>
+                    </div>
+                    <div class="flex">
+                        <div class="font-light no-shrink"> 实际休假时间： </div>
+                        <div class="font-normal flex-1 mr-5"><span>-</span></div>
+                    </div>
+                </div>
+                <div class="cat-leave-detail hairline-b hairline-t px-20 bg-white py-10 my-10" flow-biz="true"><img alt="辅导猫" src="https://feres.campusphere.net/fe_components/counselor-assets/images/common-pass.png" data-error="图片加载失败" class="cat-image audit-pass">
+                    <div class="font-dark font-14 mb-10"> 我的 请假申请 </div>
+                    <!---->
+                    <div class="flex mb-5 font-12 ai-center relative">
+                        <div class="totalDays pin-t pin-r absolute font-14 bold px-10 py-5 font-primary radius-small"> 8小时 </div>
+                        <div class="font-light no-shrink row-label"> 开始时间： </div>
+                        <div class="font-normal flex-1 ml-5 bold"> 12-06 08:00 </div>
+                    </div>
+                    <div class="flex mb-5 font-12 ai-center">
+                        <div class="font-light no-shrink row-label"> 结束时间： </div>
+                        <div class="font-normal flex-1 ml-5 bold"> 12-06 16:00 </div>
+                    </div>
+                    <div class="flex mb-5 font-12 ai-center">
+                        <div class="font-light no-shrink row-label"> 审批流程： </div>
+                        <div class="font-normal flex-1 ml-5"> 共1步
+                            <!---->
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="flex mb-5 font-12 ai-start">
+                        <div class="font-light no-shrink row-label" style="width: 16vw;"> 审批人： </div>
+                        <div class="font-normal flex-1 ml-5 break-all"> 曹士波 </div>
+                    </div>
+                    <div class="flex mb-5 font-12 ai-start mb-5">
+                        <div class="font-light no-shrink row-label"> 请假原因： </div>
+                        <div class="font-normal flex-1 ml-5 break-all"> 生理期 肚子疼的厉害 </div>
+                    </div>
+                    <!---->
+                    <div class="flex mb-5 font-12 ai-center">
+                        <div class="font-light no-shrink row-label"> 发起位置： </div>
+                        <div class="font-normal flex-1 ml-5"><span href="javascript:void(0)" class="location" style="color: rgb(51, 153, 255); cursor: pointer;">山东省德州市德城区果园路</span></div>
+                    </div>
+                    <div class="flex mb-5 font-12 ai-center">
+                        <div class="font-light no-shrink row-label" style="width: 16vw;"> 抄送人： </div>
+                        <div class="font-normal flex-1 ml-5"><span class="location">已选择2人<span style="color: #2D8CF0">查看 &gt;</span></span></div>
+                    </div>
+                    <!---->
+                    <div class="flex mb-5 font-12 ai-start">
+                        <div class="font-light no-shrink row-label"> 宿舍信息： </div>
+                        <div class="font-normal flex-1 ml-5 break-all"> - </div>
+                    </div>
+                    <!---->
+                    <!---->
+                    <div class="flex mb-5 font-12 ai-center font-warning text-justify break-all"> “同学们请做好个人防护、按时返回学校，返校时主动测温。另：请在请假理由中填写出行方式 </div>
+                </div>
+                <!---->
+                <!---->
+            </div>
+            <div class="cat-personal-modal flex-center flex-1 h-screen w-screen h-screen absolute pin-l pin-t" style="display: none;">
+                <div class="personal-info-box px-15 py-15 radius-normal overflow-hidden">
+                    <div class="info-box-title font-16 font-normal text-center pb-15 relative"><span class="font-bold">个人信息</span><i class="absolute close-icon cat-icon iconfont iconclose1" style="font-size: 4.8vw; color: rgb(101, 113, 128);"></i></div>
+                    <div class="info-box-content overflow-y-auto">
+                        <div class="row-wrap">
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 照片： </div>
+                                <div class="content-row-value flex-1"> - </div>
+                            </div>
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 姓名： </div>
+                                <div class="content-row-value flex-1"> 丛子媛 </div>
+                            </div>
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 学号： </div>
+                                <div class="content-row-value flex-1"> 202401701068 </div>
+                            </div>
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 性别： </div>
+                                <div class="content-row-value flex-1"> 女 </div>
+                            </div>
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 年级： </div>
+                                <div class="content-row-value flex-1"> 2024 </div>
+                            </div>
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 学院： </div>
+                                <div class="content-row-value flex-1"> 计算机与信息学院 </div>
+                            </div>
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 专业： </div>
+                                <div class="content-row-value flex-1"> 计算机科学与技术 </div>
+                            </div>
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 班级： </div>
+                                <div class="content-row-value flex-1"> 24计科本2 </div>
+                            </div>
+                            <div class="box-content-row font-14 font-normal font-bold flex mb-10 ai-start">
+                                <div class="content-row-label mr-5 no-shrink"> • 宿舍： </div>
+                                <div class="content-row-value flex-1"> - </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="boyaSevice"><a href="https://dzu.campusphere.net/iap/login/pc.html?_2lBepC=1e0132bd9d2d44afbe0e02ea40a4de4e"><img width="15" src="data:image/png;base64,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"> 智能客服 </div></a>
+    <div class="van-toast van-toast--middle van-toast--loading" style="z-index: 2001; display: none;">
+        <div class="van-loading van-loading--spinner van-toast__loading"><span class="van-loading__spinner van-loading__spinner--spinner"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+        <div class="van-toast__text">加载中...</div>
+    </div>
+    <!---->
+    <!---->
+</body>
+
+</html>
