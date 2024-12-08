@@ -17,7 +17,7 @@
         <div class="page-share flex-col flex-1 h-screen overflow-hidden">
             <div class="flex-col flex-1 ios-touch-scroll">
                 <div class="cat-status-flag no-shrink">
-                    <div class="flag-dom relative flag-success"><span class="personal-info absolute">个人信息 &gt;</span>
+                    <div class="flag-dom relative flag-success"><span class="personal-info absolute" onclick="show('tapinfo')">个人信息 &gt;</span>
                         <div class="flag-text">
                             <div class="status-svg-text"><i class="cat-icon iconfont iconsure2" style="font-size: 5.33333vw; color: rgb(255, 255, 255);"></i><span>审批已通过</span></div>
                             <div class="status-text-bold"> 正在休假中 </div>
@@ -151,10 +151,55 @@
                 </div>
             </div>
         </div>
-        <div class="boyaSevice"><a href="https://dzu.campusphere.net/iap/login/pc.html?_2lBepC=1e0132bd9d2d44afbe0e02ea40a4de4e"><img width="15" src="data:image/png;base64,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"> 智能客服 </div></a>
-    <div class="van-toast van-toast--middle van-toast--loading" style="z-index: 2001; display: none;">
-        <div class="van-loading van-loading--spinner van-toast__loading"><span class="van-loading__spinner van-loading__spinner--spinner"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
-        <div class="van-toast__text">加载中...</div>
+
+        <div id="tapinfo">
+			<div id="infocard">
+				<table style="width: 100%;margin-left: 15px;color: #0f0f0f;font-weight: 600;">
+					<tr>
+						<td></td>
+						<td><p style="font-size: 14px;">个人信息</p></td>
+						<td style="width: 30%;"><div class="close" onclick="closecard()"></div></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top" style="width: fit-content;"><p>• 照片:</p></td>
+						<td><img id="stuimgsrc" style="width: 70px;height: 95px;margin-left: -60px;" src=""/></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top"><p>• 姓名:</p></td>
+						<td><p id="truename" style="text-align: left;"></p></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top"><p>• 学号:</p></td>
+						<td><p id="studentid" style="text-align: left;"></p></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top"><p>• 性别:</p></td>
+						<td><p id="sex" style="text-align: left;"></p></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top"><p>• 年级:</p></td>
+						<td><p id="grade" style="text-align: left;"></p></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top"><p>• 学院:</p></td>
+						<td><p id="faculties" style="text-align: left;"></p></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top"><p>• 专业:</p></td>
+						<td><p id="major" style="text-align: left;"></p></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top"><p>• 班级:</p></td>
+						<td><p id="banji" style="text-align: left;"></p></td>
+					</tr>
+					<tr style="height: 20px;">
+						<td valign="top"><p>• 宿舍:</p></td>
+						<td><p id="sushe" style="text-align: left;"></p></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+        
     </div>
     <!---->
     <!---->

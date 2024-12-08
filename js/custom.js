@@ -10,3 +10,8 @@ function getTime() {
     element.innerHTML = '当前时间：' + year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second ;
     }
     setInterval(getTime, 1000);
+
+    s
+    function closecard(){
+        document.getElementById("tapinfo").style.display = "none";
+    }
